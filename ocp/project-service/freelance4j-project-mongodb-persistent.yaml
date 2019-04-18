@@ -50,7 +50,7 @@ objects:
               value: db.projects.insert({"_id":"329299","projectId":"329299","ownerFirstName":"Peter","ownerLastName":"Schmidt","ownerEmailAddress":"peter.schmidt@gmail.com",
                "projectTitle":"Facebook Graph","projectDescription":"Use the facebook graph to retriev information about users","projectStatus":"open"});
                db.projects.insert({"_id":"329300","projectId":"329300","ownerFirstName":"Sven","ownerLastName":"Brust","ownerEmailAddress":"sven.brust@gmail.com",
-               "projectTitle":"IPv6 Migration","projectDescription":"Migration of the ip address to ipv6 format","projectStatus":"in progress"});
+               "projectTitle":"IPv6 Migration","projectDescription":"Migration of the ip address to ipv6 format","projectStatus":"in_progress"});
                db.projects.insert({"_id":"329301","projectId":"329301","ownerFirstName":"Anna","ownerLastName":"Wolf","ownerEmailAddress":"awolf@gmail.com",
                "projectTitle":"Kids Shop","projectDescription":"Develop the online shop","projectStatus":"completed"});
                db.projects.insert({"_id":"329302","projectId":"329302","ownerFirstName":"Christoph","ownerLastName":"Sauer","ownerEmailAddress":"sauer@gmail.com",
