@@ -1,0 +1,8 @@
+metadata:
+  name: gateway-service
+spec:
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: ${project.artifactId}
