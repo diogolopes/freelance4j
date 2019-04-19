@@ -33,7 +33,9 @@ public class ProjectService {
      */
     private WebTarget projectGetByIdService;
     
-    // inject don't work, if many as 1 parameter exists in the config map
+    /**
+    * inject environment varible project_service_url
+    */
     @Inject
     @ConfigurationValue("project_service_url")
     private String projectUrl;
@@ -89,11 +91,6 @@ public class ProjectService {
      */
     @PostConstruct
     public void init() {
-    	/*
-    	if (projectUrl == null || projectUrl.isEmpty()) {
-    		projectUrl = "http://project-service-kuba85-freelance4j-project.apps.na311.openshift.opentlc.com";
-    	}
-    	*/
     	projectBaseService = ((ResteasyClientBuilder)ClientBuilder.newBuilder())
                 .connectionPoolSize(10).build().target(projectUrl).path("projects");
     	
