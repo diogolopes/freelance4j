@@ -29,7 +29,9 @@ public class FreelancerService {
      */
     private WebTarget freelancerGetByIdService;
     
-    // inject don't work, if many as 1 parameter exists in the config map
+    /**
+    * inject envirment varible freelancer_service_url
+    */
     @Inject
     @ConfigurationValue("freelancer_service_url")
     private String freelancerUrl;
@@ -71,11 +73,6 @@ public class FreelancerService {
      */
     @PostConstruct
     public void init() {
-    	/*
-    	if (freelancerUrl == null || freelancerUrl.isEmpty()) {
-    		freelancerUrl = "http://freelancer-service-kuba85-freelance4j-freelancer.apps.na311.openshift.opentlc.com";
-    	}
-    	*/
     	freelancerBaseService = ((ResteasyClientBuilder)ClientBuilder.newBuilder())
                 .connectionPoolSize(10).build().target(freelancerUrl).path("freelancers");
     	
