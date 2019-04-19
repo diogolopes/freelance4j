@@ -30,7 +30,7 @@ public class FreelancerService {
     private WebTarget freelancerGetByIdService;
     
     /**
-    * inject envirment varible freelancer_service_url
+    * inject environment varible freelancer_service_url
     */
     @Inject
     @ConfigurationValue("freelancer_service_url")
