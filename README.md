@@ -17,6 +17,7 @@ The database h2 in memory is used for testing. It is very easy to use, but at th
 For the MongoDB testing is used MongoClinet from vert.x.
 ## URL on github.com or bitbucket.org
  - https://bitbucket.org/diogolopes16/freelance4j
+ - https://github.com/diogolopes/freelance4j
 ## curl request
 ### Project Service
  - curl -X GET "http://project-service-dilopes-freelance4j-project.apps.na311.openshift.opentlc.com/projects"
