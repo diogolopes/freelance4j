@@ -15,8 +15,8 @@ In the project 'freelance4j' is used technologies such as ConfigMap, because it 
 For example, if it need to change the endpoint for the service or it need t change the connection configuration to the database.
 The database h2 in memory is used for testing. It is very easy to use, but at the same time gives the opportunity to fully check services.
 For the MongoDB testing is used MongoClinet from vert.x.
-## URL on github.com
- - https://github.com/dilopes/freelance4j
+## URL on github.com or bitbucket.org
+ - https://bitbucket.org/diogolopes16/freelance4j
 ## curl request
 ### Project Service
  - curl -X GET "http://project-service-dilopes-freelance4j-project.apps.na311.openshift.opentlc.com/projects"
@@ -42,7 +42,7 @@ $ export GATEWAY_PRJ=dilopes-freelance4j-gateway
 ## Login on Sharde Master Cluster
 
 ```sh
-$ oc login --insecure-skip-tls-verify -u andriy.kupershmidt-devoteam.com --server=https://master.na311.openshift.opentlc.com:443
+$ oc login --insecure-skip-tls-verify -u dilopes-redhat.com --server=https://master.na311.openshift.opentlc.com:443
 ```
 
 # Project Service
