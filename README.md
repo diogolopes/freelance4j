@@ -16,28 +16,28 @@ For example, if it need to change the endpoint for the service or it need t chan
 The database h2 in memory is used for testing. It is very easy to use, but at the same time gives the opportunity to fully check services.
 For the MongoDB testing is used MongoClinet from vert.x.
 ## URL on github.com
- - https://github.com/kuba85/freelance4j
+ - https://github.com/dilopes/freelance4j
 ## curl request
 ### Project Service
- - curl -X GET "http://project-service-kuba85-freelance4j-project.apps.na311.openshift.opentlc.com/projects"
- - curl -X GET "http://project-service-kuba85-freelance4j-project.apps.na311.openshift.opentlc.com/projects/329299"
- - curl -X GET "http://project-service-kuba85-freelance4j-project.apps.na311.openshift.opentlc.com/projects/status/cancelled"
+ - curl -X GET "http://project-service-dilopes-freelance4j-project.apps.na311.openshift.opentlc.com/projects"
+ - curl -X GET "http://project-service-dilopes-freelance4j-project.apps.na311.openshift.opentlc.com/projects/329299"
+ - curl -X GET "http://project-service-dilopes-freelance4j-project.apps.na311.openshift.opentlc.com/projects/status/cancelled"
 ### Freelancer Service
- - curl -X GET "http://freelancer-service-kuba85-freelance4j-freelancer.apps.na311.openshift.opentlc.com/freelancers"
- - curl -X GET "http://freelancer-service-kuba85-freelance4j-freelancer.apps.na311.openshift.opentlc.com/freelancers/1000001"
+ - curl -X GET "http://freelancer-service-dilopes-freelance4j-freelancer.apps.na311.openshift.opentlc.com/freelancers"
+ - curl -X GET "http://freelancer-service-dilopes-freelance4j-freelancer.apps.na311.openshift.opentlc.com/freelancers/1000001"
 ### Gateway API
- - curl -X GET "http://gateway-service-kuba85-freelance4j-gateway.apps.na311.openshift.opentlc.com/gateway/projects"
- - curl -X GET "http://gateway-service-kuba85-freelance4j-gateway.apps.na311.openshift.opentlc.com/gateway/projects/status/open"
- - curl -X GET "http://gateway-service-kuba85-freelance4j-gateway.apps.na311.openshift.opentlc.com/gateway/projects/329299"
- - curl -X GET "http://gateway-service-kuba85-freelance4j-gateway.apps.na311.openshift.opentlc.com/gateway/freelancers"
- - curl -X GET "http://gateway-service-kuba85-freelance4j-gateway.apps.na311.openshift.opentlc.com/gateway/freelancers/1000002"
+ - curl -X GET "http://gateway-service-dilopes-freelance4j-gateway.apps.na311.openshift.opentlc.com/gateway/projects"
+ - curl -X GET "http://gateway-service-dilopes-freelance4j-gateway.apps.na311.openshift.opentlc.com/gateway/projects/status/open"
+ - curl -X GET "http://gateway-service-dilopes-freelance4j-gateway.apps.na311.openshift.opentlc.com/gateway/projects/329299"
+ - curl -X GET "http://gateway-service-dilopes-freelance4j-gateway.apps.na311.openshift.opentlc.com/gateway/freelancers"
+ - curl -X GET "http://gateway-service-dilopes-freelance4j-gateway.apps.na311.openshift.opentlc.com/gateway/freelancers/1000002"
 # Environment setup
 ## Environment variables
 
 ```sh
-$ export PROJECT_PRJ=kuba85-freelance4j-project
-$ export FREELANCER_PRJ=kuba85-freelance4j-freelancer
-$ export GATEWAY_PRJ=kuba85-freelance4j-gateway
+$ export PROJECT_PRJ=dilopes-freelance4j-project
+$ export FREELANCER_PRJ=dilopes-freelance4j-freelancer
+$ export GATEWAY_PRJ=dilopes-freelance4j-gateway
 ```
 ## Login on Sharde Master Cluster
 
@@ -85,7 +85,7 @@ Validate project url
 ```sh
 $ echo $PROJECT_URL
 ```
-> http://project-service-kuba85-freelance4j-project.apps.na311.openshift.opentlc.com
+> http://project-service-dilopes-freelance4j-project.apps.na311.openshift.opentlc.com
 
 Retrieve a list of projects
 ```sh
@@ -138,7 +138,7 @@ Validate project url
 ```sh
 $ echo $FREELANCER_URL
 ```
-> http://freelancer-service-kuba85-freelance4j-freelancer.apps.na311.openshift.opentlc.com
+> http://freelancer-service-dilopes-freelance4j-freelancer.apps.na311.openshift.opentlc.com
 
 Test project service with curl
 Invoke the health check endpoint
@@ -185,7 +185,7 @@ Validate project url
 ```sh
 $ echo $GATEWAY_URL
 ```
-> http://gateway-service-kuba85-freelance4j-gateway.apps.na311.openshift.opentlc.com
+> http://gateway-service-dilopes-freelance4j-gateway.apps.na311.openshift.opentlc.com
 
 Test project service with curl
 Invoke the health check endpoint
